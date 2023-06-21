@@ -20,8 +20,14 @@ public class Main {
     }
     public static void task2(List<Integer> nums) {
         Set<Integer> result = new TreeSet<>(nums);
+        for (Integer num : nums) {
+            if (num % 2 == 0) {
+                result.add(num);
+            }
+        }
         System.out.println(result);
-    }  public static void task3(List<String> words) {
+    }
+    public static void task3(List<String> words) {
         Set<String> uniqWords = new TreeSet<>(words);
         System.out.println(uniqWords);
     }
